@@ -1,6 +1,4 @@
-import seaborn as sn
 import pandas as pd
-import matplotlib.pyplot as plt
 
 def n_largest(dataframe, mutation, calc, n, TP_FP_list, excel_name):
     top_TP_FP = pd.DataFrame(columns=[mutation, calc])

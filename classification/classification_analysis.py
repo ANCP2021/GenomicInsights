@@ -1,6 +1,4 @@
-import seaborn as sn
 import pandas as pd
-import matplotlib.pyplot as plt
 
 excel_mutations = pd.read_excel('mutations.xlsx')
 mutations_dataframe = pd.DataFrame(excel_mutations)

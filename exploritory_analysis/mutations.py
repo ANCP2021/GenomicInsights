@@ -1,4 +1,3 @@
-from operator import contains
 import sys
 import pandas as pd
 
@@ -66,9 +65,6 @@ def min_max_individual_per_mutation(dataframe):
 
     print("Maximum Individuals per Mutation:", max_value)
     print("Minimum Individuals per Mutation:", min_value)
-    
-
-
 
 count_unique_mutations(mutations_dataframe)
 count_individual_samples(mutations_dataframe)

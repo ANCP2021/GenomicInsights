@@ -2,15 +2,15 @@ import seaborn as sn
 import pandas as pd
 import matplotlib.pyplot as plt
 
-excel_mutations = pd.read_excel('mutations.xlsx')
-mutations_dataframe = pd.DataFrame(excel_mutations)
-original_mutations_dataframe = pd.DataFrame(excel_mutations)
-
 def samples_by_F(mutation_name, dataframe, sample_col):
     mutation_and_sample_df = pd.DataFrame(columns=["Sample", mutation_name])
     mutation_and_sample_df["Sample"] = dataframe[sample_col]
     mutation_and_sample_df[mutation_name] = dataframe[mutation_name]
     print(mutation_and_sample_df)
+
+excel_mutations = pd.read_excel('mutations.xlsx')
+mutations_dataframe = pd.DataFrame(excel_mutations)
+original_mutations_dataframe = pd.DataFrame(excel_mutations)
 
 actual = mutations_dataframe["Unnamed: 0"].to_list()
 actual_binary = []
